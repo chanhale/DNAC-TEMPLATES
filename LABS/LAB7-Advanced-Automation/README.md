@@ -110,7 +110,7 @@ So lets modify the EEM script to first solve the naming aspect with regard to co
 ```
 First lets address the primary problem, the naming of interfaces with descriptions.
 
-You will see that lines *201 to 220* were added to the EEM script. Within that construct we look for the keyword `Trans-Bridge` within the built in variable to determine if the port is connected to an Access Point. If it is then it results in a True or binary 1 state and the included code from lines *211 to 220* run line by line. The configuration adds a description to the interface for the phone of `description AP - KO-AP0C75 - GigabitEthernet0` for example.
+You will see that lines *201 to 220* were added to the EEM script. Within that construct we look for the keyword `Trans-Bridge` within the built in variable to determine if the port is connected to an Access Point. If it is then it results in a True or binary 1 state and the included code from lines *211 to 220* run line by line. The configuration adds a description to the interface for the AP of `description AP - KO-AP0C75 - GigabitEthernet0` for example.
 
 You will see that lines *250 to 260* were added to the EEM script. Within that construct we look for the keyword `Phone` within the built in variable to determine if the port is connected to a Phone. If it is then it results in a True or binary 1 state and the included code from lines *253 to 260* run line by line. The configuration adds a description to the interface for the phone of `description Phone - SEPB07D47D34910 - Port 1` for example.
 
