@@ -200,7 +200,7 @@ We will analyze the configuration in more detail below and modify it for greater
 ```
 Within the first block of code some interesting concepts are dealt with. First we create an *Array* with the various Product ID's for each switch within the stack using the `.split(",")` *method* as we previously discussed in step 2. The `.size()` *method* is then used to determine how many switches are in the stack. A blank *array* is defined for later use. We then create an offset variable to account for the fact that *arrays* start at zero (0) to be used throughout the template.
 
-Within the loop structure, we iterate through using the variable PortCount to load the regex value grep'd from the Product ID accomplished via the `.replaceAll(""C9300L?-([2|4][4|8]).*","$1"")` *method* which in each case is either 24 or 48 to denote a 24 or 48 port switch. The PortCount variable is then appended to the *array* PortTotal using the add *method*.
+Within the loop structure, we iterate through using the variable PortCount to load the regex value derived from the Product ID accomplished via the `.replaceAll(""C9300L?-([2|4][4|8]).*","$1"")` *method* which in each case is either 24 or 48 to denote a 24 or 48 port switch. The PortCount variable is then appended to the *array* PortTotal using the add *method*.
 
 We now have the data we need to configure the ports of the switch, being the number of switches, and the number of ports in each switch.
 ```
