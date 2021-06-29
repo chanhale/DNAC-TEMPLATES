@@ -260,7 +260,7 @@ Within the above code we define a Macro to add the various VLANs to the trunk in
    ##Access Port Configuration
    #foreach( $Switch in [0..$offset] )
      #set( $SwiNum = $Switch + 1 )
-     interface range gi ${SwiNum}/0/1 - 9, gi ${SwiNum}/0/12 $PortTotal[$Switch]
+     interface range gi ${SwiNum}/0/1 - 9, gi ${SwiNum}/0/12 - $PortTotal[$Switch]
        #access_interface
    #end
    !
