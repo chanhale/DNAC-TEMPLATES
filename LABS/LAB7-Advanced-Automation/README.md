@@ -272,7 +272,7 @@ Within the above code we define a Macro to add the various VLANs to the trunk in
 In the above code we apply the various previously defined Macros to configure the various access ports via a loop structure. We then apply the VLANs to the port-channel.
 
 ### ***Modify Code***
-Now while this is an eligant script it could be more automated and include ways to deal with both Access Points, and IOT devices in the same script. Lets look at how we might make these kind of changes in an automated programatic way.
+Now while this is an elegant script it could be more automated and include ways to deal with both Access Points, and IOT devices in the same script. Lets look at how we might make these kind of changes in an automated programatic way.
 
 First lests deal with vlans on the Target switch. In the example above we use one variable to extrapolate the various device VLANs. Alternatively, that could be accomplished using a built in variable like the native VLAN and a similar approach.
 
